@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Wordly Dictionary</h1>
+        <p>Discover the meaning of any word.</p>
+        <button id="themeButton" type="button">Toggle Theme</button>
+    </header>
+
+    <main>
+        <form id="searchForm">
+            <label for="wordInput">Enter a word</label>
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="wordInput"
+                    placeholder="e.g. curious"
+                    aria-label="Word to search"
+                    required
+                >
+                <button type="submit">Search</button>
+            </div>
+        </form>
+
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <section id="results" aria-label="Dictionary results"></section>
+
+        <section class="favorites-section">
+            <h2>My Favorite Words</h2>
+            <ul id="favoritesList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Wordly Dictionary | Powered by Free Dictionary API</p>
+    </footer>
+</body>
+</html>

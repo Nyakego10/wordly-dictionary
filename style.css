@@ -1,0 +1,152 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5fa;
+    color: #222;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3949ab;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #3949ab;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+header button {
+    background-color: white;
+    color: #3949ab;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+main {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+#searchForm,
+#results,
+.favorites-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+h2, h3 {
+    color: #3949ab;
+}
+
+.word-heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.favorite-button {
+    background-color: #e8eaf6;
+    color: #303f9f;
+}
+
+.favorite-item {
+    margin: 8px 0;
+}
+
+.favorite-item button {
+    margin-left: 8px;
+}
+
+#message {
+    font-weight: bold;
+}
+
+.error {
+    color: #b00020;
+}
+
+.definition {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+body.dark {
+    background-color: #181a24;
+    color: #f1f1f1;
+}
+
+body.dark #searchForm,
+body.dark #results,
+body.dark .favorites-section {
+    background-color: #272a38;
+    color: #f1f1f1;
+}
+
+body.dark h2,
+body.dark h3 {
+    color: #b7c2ff;
+}
+
+body.dark input {
+    background-color: #181a24;
+    color: white;
+    border-color: #555;
+}
+
+body.dark .definition {
+    border-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 12px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+}
