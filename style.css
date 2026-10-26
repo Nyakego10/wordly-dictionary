@@ -3,19 +3,35 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f5fa;
+    background-image: linear-gradient(
+        rgba(5, 10, 20, 0.72),
+        rgba(5, 10, 20, 0.82)
+    ), url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #222;
     margin: 0;
     line-height: 1.6;
 }
 
+
 header {
-    background-color: #3949ab;
+   
+background-image: linear-gradient(
+    rgba(5, 10, 20, 0.15),
+    rgba(5, 10, 20, 0.30)
+), url("images/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
-    padding: 25px 15px;
+    padding: 50px 15px;
 }
 
 header h1 {
